@@ -1,0 +1,394 @@
+/* ---------- RESET ---------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#050816,#0b1026,#1b1240);
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ---------- STARRY BACKGROUND ---------- */
+
+#stars{
+    position:fixed;
+    inset:0;
+    z-index:-2;
+    background-image:
+    radial-gradient(white 1px, transparent 1px),
+    radial-gradient(#ffe082 1px, transparent 1px);
+
+    background-size:45px 45px,80px 80px;
+
+    opacity:.35;
+
+    animation:moveStars 80s linear infinite;
+}
+
+@keyframes moveStars{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform:translateY(-800px);
+    }
+}
+
+/* ---------- LOADER ---------- */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#000;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:9999;
+
+}
+
+#loader h1{
+
+    font-size:90px;
+
+    animation:rotateCake 2s infinite linear;
+
+}
+
+#loader h2{
+
+    margin-top:20px;
+
+}
+
+@keyframes rotateCake{
+
+from{
+
+transform:rotate(0);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:65px;
+
+text-shadow:0 0 20px hotpink;
+
+}
+
+.hero h2{
+
+margin:20px;
+
+color:#ffd54f;
+
+}
+
+.hero p{
+
+max-width:700px;
+
+line-height:1.8;
+
+font-size:20px;
+
+}
+
+button{
+
+margin-top:40px;
+
+padding:16px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:pointer;
+
+background:#ff4081;
+
+color:white;
+
+transition:.4s;
+
+box-shadow:0 0 20px hotpink;
+
+}
+
+button:hover{
+
+transform:translateY(-5px) scale(1.05);
+
+}
+
+/* ---------- GIFT ---------- */
+
+#giftSection{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+#giftBox{
+
+width:200px;
+
+height:200px;
+
+margin:auto;
+
+position:relative;
+
+cursor:pointer;
+
+transition:.5s;
+
+}
+
+#giftBox:hover{
+
+transform:scale(1.05);
+
+}
+
+.box{
+
+position:absolute;
+
+bottom:0;
+
+width:200px;
+
+height:140px;
+
+background:#ff4081;
+
+border-radius:0 0 25px 25px;
+
+box-shadow:0 0 30px hotpink;
+
+}
+
+.lid{
+
+position:absolute;
+
+top:20px;
+
+left:-5px;
+
+width:210px;
+
+height:45px;
+
+background:#ff0055;
+
+border-radius:15px;
+
+transition:1s;
+
+}
+
+.open .lid{
+
+transform:rotate(-120deg);
+
+transform-origin:left center;
+
+}
+
+/* ---------- SLIDESHOW ---------- */
+
+#slideshow{
+
+padding:100px 20px;
+
+text-align:center;
+
+}
+
+#slideImage{
+
+width:80%;
+
+max-width:700px;
+
+border-radius:25px;
+
+border:6px solid white;
+
+box-shadow:0 0 40px rgba(255,255,255,.3);
+
+transition:1s;
+
+}
+
+#caption{
+
+margin-top:20px;
+
+font-size:22px;
+
+}
+
+/* ---------- LETTER ---------- */
+
+#letter{
+
+padding:100px 25px;
+
+max-width:850px;
+
+margin:auto;
+
+text-align:center;
+
+}
+
+#letter h2{
+
+margin-bottom:30px;
+
+font-size:42px;
+
+}
+
+#message{
+
+font-family:'Caveat',cursive;
+
+font-size:38px;
+
+line-height:1.7;
+
+background:rgba(255,255,255,.08);
+
+padding:35px;
+
+border-radius:20px;
+
+backdrop-filter:blur(12px);
+
+}
+
+/* ---------- HEART ---------- */
+
+.heart{
+
+position:fixed;
+
+bottom:-40px;
+
+font-size:25px;
+
+animation:floatHeart 5s linear forwards;
+
+}
+
+@keyframes floatHeart{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-900px);
+
+opacity:0;
+
+}
+
+}
+
+/* ---------- RESPONSIVE ---------- */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero h2{
+
+font-size:28px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+#slideImage{
+
+width:95%;
+
+}
+
+#message{
+
+font-size:28px;
+
+}
+
+}

@@ -71,7 +71,22 @@ document.getElementById("giftBox").onclick = function(){
 
     launchHearts();
 
-    document.getElementById("music").play();
+   
+    function toggleMusic() {
+    const music = document.getElementById("music");
+
+    if (music.paused) {
+        music.play()
+            .then(() => {
+                console.log("Music started.");
+            })
+            .catch(error => {
+                console.error("Error playing music:", error);
+            });
+    } else {
+        music.pause();
+    }
+}
 
 }
 

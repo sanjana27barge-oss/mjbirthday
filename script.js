@@ -27,11 +27,12 @@ function scrollToGift() {
 // ============================
 
 const photos = [
-    "photo1.jpg",
-    "photo2.jpg",
-    "photo3.jpg",
-    "photo4.jpg",
-    "photo5.jpg"
+    "mj1.jpeg",
+    "mj2.jpeg",
+    "mj3.jpeg",
+    "mj4.jpeg",
+    "mj5.jpeg",
+    "mj5.jpeg"
 ];
 
 const captions = [

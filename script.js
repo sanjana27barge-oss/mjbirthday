@@ -71,7 +71,7 @@ document.getElementById("giftBox").onclick = function(){
 
     launchHearts();
 
-    document.getElementById("music.mp3.mp3").play();
+    document.getElementById("music").play();
 
 }
 

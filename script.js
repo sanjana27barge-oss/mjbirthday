@@ -32,7 +32,7 @@ const photos = [
     "mj3.jpeg",
     "mj4.jpeg",
     "mj5.jpeg",
-    "mj5.jpeg"
+    "mj6.jpeg"
 ];
 
 const captions = [

@@ -71,7 +71,7 @@ document.getElementById("giftBox").onclick = function(){
 
     launchHearts();
 
-    document.getElementById("Tenu Sang Rakhna-Jigra 128 Kbps.mp3").play();
+    document.getElementById("music.mp3.mp3").play();
 
 }
 

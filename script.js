@@ -65,31 +65,39 @@ function startSlideshow() {
 // Gift Box
 // ============================
 
-document.getElementById("giftBox").onclick = function(){
+// ============================
+// Music
+// ============================
 
-    this.classList.add("open");
-
-    launchHearts();
-
-   
-    function toggleMusic() {
+function toggleMusic() {
     const music = document.getElementById("music");
 
     if (music.paused) {
-        music.play()
-            .then(() => {
-                console.log("Music started.");
-            })
-            .catch(error => {
-                console.error("Error playing music:", error);
-            });
+        music.play().catch(error => {
+            console.error("Music error:", error);
+        });
     } else {
         music.pause();
     }
 }
 
-}
+// ============================
+// Gift Box
+// ============================
 
+document.getElementById("giftBox").onclick = function () {
+
+    this.classList.add("open");
+
+    launchHearts();
+
+    const music = document.getElementById("music");
+
+    music.play().catch(error => {
+        console.error("Music error:", error);
+    });
+
+};
 // ============================
 // Hearts Animation
 // ============================

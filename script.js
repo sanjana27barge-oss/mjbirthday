@@ -174,21 +174,41 @@ function createBalloons(){
 
 const finalLetter = `
 
-Dear Best Friend,
+my Dear Mjjjj,
 
 Happy Birthday!
 
-Thank you for always being there.
+Thank you for always being there for me in my lows and highs,
 
-You are one of the greatest blessings in my life.
+for making me laugh,
 
+for supporting me,
+
+and for making life brighter.
+
+hope our bond lasts very long not only for this life time even in others love u more my dearest best friend 
+  
+love u to the mmoon and back my love 
+
+you may not realize but one single message or one call from u makes my whole day...
+
+miss you moreeee my bestest frienddd 
+  
 I hope every dream you have comes true.
 
-May this year bring happiness, success, peace, laughter and endless memories.
+You deserve endless happiness,
 
-Never stop smiling.
+good health,
 
-Happy Birthday ❤️
+success,
+
+and love.
+
+May this year become your best year ever..
+
+Happy Birthday once again!
+
+❤️
 
 `;
 
